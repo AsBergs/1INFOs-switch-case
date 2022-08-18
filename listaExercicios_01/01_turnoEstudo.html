@@ -11,11 +11,23 @@
     */
 
     //ENTRADA
-
-    
+const turno = prompt("Que turno você estuda? m (matutino), v (vespertino) ou n (noturno)")
+    let respostaNaTela
     //PROCESSAMENTO
-
+switch(turno){
+case `m`:
+   respostaNaTela = `Bom Dia!` ;
+break;
+case `v`:
+    respostaNaTela = `Boa Tarde!`
+break;
+case `n`:
+    respostaNaTela = `Boa Noite!`
+    break;
+    default:respostaNaTela = `Valor Inválido!`
+    break;
+}
     
     //SAÍDA
-
+document.write(`${respostaNaTela}`)
 </script>

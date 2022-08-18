@@ -10,8 +10,21 @@
     */
 
     //ENTRADA
+    const pergunta1 = prompt("Telefonou para a vítima?")
+    const pergunta2 = prompt("Esteve no local do crime?")
+    const pergunta3 = prompt("Mora perto da vítima?")
+    const pergunta4 = prompt("Devia para a vítima?")
+    const pergunta5 = prompt("Já trabalhou com a vítima?")
 
-    
+    //PROCESSAMENTO
+let grauParticipaçao = 0
+    if(pergunta1 === `sim`) grauParticipaçao = grauParticipaçao + 1
+if (pergunta2 === `sim`) grauParticipaçao++
+if (pergunta3 === `sim`)grauParticipaçao++
+if (pergunta4 === `sim`)grauParticipaçao++
+if (pergunta5 === `sim`)grauParticipaçao++
+    //SAÍDA
+swicth()
     //PROCESSAMENTO
 
     
