@@ -10,11 +10,29 @@
     */
 
     //ENTRADA
+<<<<<<< HEAD
     const telefonou = parseInt(prompt("Você telefonou para a vitima? (1- Sim | 2- Nao)"))
     const local = parseInt(prompt("Você esteve no local do crime? (1- Sim | 2- Nao)"))
     const mora = parseInt(prompt("Você mora perto da vitima? (1- Sim | 2- Nao)"))
     const devia = parseInt(prompt("Você devia para a vitima? (1- Sim | 2- Nao)"))
     const trabalhou = parseInt(prompt("Você já trabalhou com a vitima? (1- Sim | 2- Nao)"))
+=======
+    const pergunta1 = prompt("Telefonou para a vítima?")
+    const pergunta2 = prompt("Esteve no local do crime?")
+    const pergunta3 = prompt("Mora perto da vítima?")
+    const pergunta4 = prompt("Devia para a vítima?")
+    const pergunta5 = prompt("Já trabalhou com a vítima?")
+
+    //PROCESSAMENTO
+let grauParticipaçao = 0
+    if(pergunta1 === `sim`) grauParticipaçao = grauParticipaçao + 1
+if (pergunta2 === `sim`) grauParticipaçao++
+if (pergunta3 === `sim`)grauParticipaçao++
+if (pergunta4 === `sim`)grauParticipaçao++
+if (pergunta5 === `sim`)grauParticipaçao++
+    //SAÍDA
+swicth()
+>>>>>>> 6be4d4021f669cabab5fc7792b9d46d2e4db0707
     //PROCESSAMENTO
     let soma = telefonou + local + mora + devia + trabalhou 
     let resultadoFinal

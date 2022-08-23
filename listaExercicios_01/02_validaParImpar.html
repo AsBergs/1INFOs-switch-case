@@ -4,6 +4,7 @@
     */
 
     //ENTRADA
+<<<<<<< HEAD
     const parImpar = parseInt(prompt("Informe um numero inteiro:")) 
     //PROCESSAMENTO
     let resultadoFinal
@@ -19,6 +20,22 @@
      break;
     }
      
+=======
+    const numero = Number(prompt("Informe um número inteiro: "))
+    let parouimpar 
+   
+    
+switch(numero % 2 == 0){
+    case 1: parouimpar = `O numero é par`
+    break;
+    default: parouimpar = `O número é ímpar`
+    break;
+}
+    
+    //PROCESSAMENTO
+
+    document.write(`${parouimpar}`)
+>>>>>>> 6be4d4021f669cabab5fc7792b9d46d2e4db0707
     //SAÍDA
     document.write(resultadoFinal)
 </script>
