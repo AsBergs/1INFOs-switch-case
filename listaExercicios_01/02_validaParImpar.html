@@ -4,11 +4,21 @@
     */
 
     //ENTRADA
-
-    
+    const parImpar = parseInt(prompt("Informe um numero inteiro:")) 
     //PROCESSAMENTO
-
-    
+    let resultadoFinal
+    const total = parImpar % 2;
+    switch (total){
+   
+      case 0:
+      resultadoFinal = "O numero e par!"
+     break;
+     
+     default:
+     resultadoFinal = "O numero e impar!"
+     break;
+    }
+     
     //SAÍDA
-
+    document.write(resultadoFinal)
 </script>
