@@ -9,56 +9,29 @@
     O script deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
     */
 
-    //ENTRADA
-<<<<<<< HEAD
-    const telefonou = parseInt(prompt("Você telefonou para a vitima? (1- Sim | 2- Nao)"))
-    const local = parseInt(prompt("Você esteve no local do crime? (1- Sim | 2- Nao)"))
-    const mora = parseInt(prompt("Você mora perto da vitima? (1- Sim | 2- Nao)"))
-    const devia = parseInt(prompt("Você devia para a vitima? (1- Sim | 2- Nao)"))
-    const trabalhou = parseInt(prompt("Você já trabalhou com a vitima? (1- Sim | 2- Nao)"))
-=======
-    const pergunta1 = prompt("Telefonou para a vítima?")
-    const pergunta2 = prompt("Esteve no local do crime?")
-    const pergunta3 = prompt("Mora perto da vítima?")
-    const pergunta4 = prompt("Devia para a vítima?")
-    const pergunta5 = prompt("Já trabalhou com a vítima?")
+const pergunta1 = Number(prompt("Telefonou para a vítima? (0-não / 1-sim"))
+const pergunta2 = Number(prompt("Esteve no local do crime? (o-não / 1-sim)"))
+const pergunta3 = Number(prompt("Mora perto da vítima? (o-não / 1-sim)"))
+const pergunta4 = Number(prompt("Devia para a vítima?(o-não / 1-sim) "))
+const pergunta5 = Number(prompt("Já trabalhou com a vítima? (o-não / 1-sim)"))
+let resultadoNaTela
 
-    //PROCESSAMENTO
-let grauParticipaçao = 0
-    if(pergunta1 === `sim`) grauParticipaçao = grauParticipaçao + 1
-if (pergunta2 === `sim`) grauParticipaçao++
-if (pergunta3 === `sim`)grauParticipaçao++
-if (pergunta4 === `sim`)grauParticipaçao++
-if (pergunta5 === `sim`)grauParticipaçao++
-    //SAÍDA
-swicth()
->>>>>>> 6be4d4021f669cabab5fc7792b9d46d2e4db0707
-    //PROCESSAMENTO
-    let soma = telefonou + local + mora + devia + trabalhou 
-    let resultadoFinal
+const culpadoOuNão = pergunta1 + pergunta2 + pergunta3 + pergunta4 + pergunta5
 
-    switch (soma){
-    
-       case 1:
+switch (culpadoOuNão) {
         case 0:
-          resultadoFinal = "Inocente"
-          break;
+        case 1:
+resultadoNaTela = "Inocente"        
+        break;
+case 2: resultadoNaTela = "Suspeito"
+        break;
+        case 3:
+        case 4: 
+        resultadoNaTela = "Cúmplice"
+        break;
+        case 5: resultadoNaTela = "Culpado!"
+        break;
+}
 
-          case 2:
-           resultadoFinal = "Suspeito"
-           break;
-
-           case 3:
-            case 4:
-             resultadoFinal = "Cumplice"  
-             break;
-             
-             default:
-            resultadoFinal = "Assasino"
-            break;
-
-    }
-
-    //SAÍDA
-    document.write(resultadoFinal)
+document.write(`O reu foi considerado ${resultadoNaTela}`)
 </script>

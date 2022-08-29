@@ -1,0 +1,22 @@
+<script>
+    //Problema: Ao usuário logar em uma aplicação, ele deverá informar se é Administrador (A), Gerente (G) ou Usuário Comum (U).
+    //Usando OPERADOR TERNÁRIO, apresente a seguinte mensagem:
+    //Se Administrador: Bom dia, Senhor!
+    //Se Gerente: Bom dia, Chefe!
+    //Se Usuário Comum: Bom dia!
+
+    //ENTRADA
+const status = prompt("Você é  Administrador (a), Gerente (g) ou Usuário Comum (u)?")
+let resultadoNaTela
+
+    //PROCESSAMENTO
+(status === `a`) ? resultadoNaTela = "Bom dia, Senhor!"
+: (status === `g`) ? resultadoNaTela = "Bom dia, Chefe!"
+: resultadoNaTela = "Bom dia!"
+
+
+
+    //SAÍDA
+document.write(resultadoNaTela);
+
+</script>
